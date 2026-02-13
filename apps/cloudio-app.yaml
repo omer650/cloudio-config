@@ -6,9 +6,9 @@ metadata:
 spec:
   project: default
   source:
-    repoURL: 'https://github.com/omer650/cloudio-infra.git'
+    repoURL: 'https://github.com/omer650/cloudio-config.git'
     targetRevision: HEAD
-    path: charts/cloudio-chart
+    path: environments/staging
   destination:
     server: 'https://kubernetes.default.svc'
     namespace: cloudio
