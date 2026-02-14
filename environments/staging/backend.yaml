@@ -17,7 +17,7 @@ spec:
     spec:
       containers:
       - name: backend
-        image: omer650/cloudio-backend:latest
+        image: omerhaim/cloudio-backend:latest
         ports:
         - containerPort: 5000
 ---
