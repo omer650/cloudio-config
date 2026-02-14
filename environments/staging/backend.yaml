@@ -18,6 +18,15 @@ spec:
       containers:
       - name: backend
         image: omerhaim/cloudio-backend:latest
+        env:
+          - name: DB_HOST
+            value: "cloudio-db-service"
+          - name: DB_NAME
+            value: "postgres"
+          - name: DB_USER
+            value: "postgres"
+          - name: DB_PASS
+            value: "password"
         ports:
         - containerPort: 8000
 ---
