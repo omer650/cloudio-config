@@ -19,7 +19,7 @@ spec:
       - name: backend
         image: omerhaim/cloudio-backend:latest
         ports:
-        - containerPort: 5000
+        - containerPort: 8000
 ---
 apiVersion: v1
 kind: Service
@@ -35,5 +35,5 @@ spec:
   ports:
     - protocol: TCP
       port: 5000
-      targetPort: 5000
+      targetPort: 8000
       nodePort: 30081
